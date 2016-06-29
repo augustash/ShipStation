@@ -116,6 +116,65 @@ class ShipStation
 
     }
 
+    /**
+     * ----------------------------------------------------
+     * debugCredentials()
+     * ----------------------------------------------------
+     *
+     * Return current values of $ssApiKey, $ssApiSecret, and $authorization
+     *
+     * @return  string|null
+     */
+    public function debugCredentials()
+    {
+        return array(
+            'api_key'       => $this->ssApiKey,
+            'api_secret'    => $this->ssApiSecret,
+            'authorization' => $this->authorization
+        );
+    }
+
+    /**
+     * ----------------------------------------------------
+     * getApiKey()
+     * ----------------------------------------------------
+     *
+     * Return current value of $ssApiKey
+     *
+     * @return  string|null
+     */
+    public function getApiKey()
+    {
+        return $this->ssApiKey;
+    }
+
+    /**
+     * ----------------------------------------------------
+     * getApiSecret()
+     * ----------------------------------------------------
+     *
+     * Return current value of $ssApiSecret
+     *
+     * @return  string|null
+     */
+    public function getApiSecret()
+    {
+        return $this->ssApiSecret;
+    }
+
+    /**
+     * ----------------------------------------------------
+     * getApiAuthorization()
+     * ----------------------------------------------------
+     *
+     * Return current value of $authorization
+     *
+     * @return  string|null
+     */
+    public function getApiAuthorization()
+    {
+        return $this->authorization;
+    }
 
 
     // Orders Related Methods [START] ============================ //
